@@ -1,0 +1,76 @@
+Badges Game
+- Supervised learning scenario
+
+Supervised learning
+- input x in X
+- Output y in Y
+- find some target function that gets you from y -> x (y = f(x))
+- learned model is y = g(x)
+
+Testing
+- labeled test data D^test
+- Reserve some labels for testing
+- (x1, x2) -> Raw x1 Test Label y1
+
+Learning the Mapping
+- We have some underlying target function to bring input to Output
+- We are trying to find the learned model
+
+Key Questions when Designing Learning System
+- Modeling
+    - How to formulate application problems as ML problems
+    - Learning Protocols (Where is the data and labels coming form?)
+- Representation
+    - How to map raw input to an instance space?
+    - what functions should we learn?
+- Algorithms
+    - How can we use this model to make a prediction
+
+Supervised Learning
+Input: Instance Space x
+- x is represented in a feature space
+     - usually x {0,1}^n 
+     - for badges game
+        - Possible features, gender/age/country/character/vowels etc.
+        - any information about it we have a guess that it is
+- x as a vector space
+    - identify a feature, then make it a vector space
+    - ex, turn all vowels to 1 etc
+
+When designing features, we often think in terms of templates
+- encode name by encoding characters
+
+Feature can be boolean or categorical 
+- has to translate down to a boolean feature
+- depends on learning algorithm, can be boolean or continuing value
+
+Good features are essential
+- Window to understanding human world
+- if no good features, then no understanding
+- need some human labor to design good feature/domain expertise
+- We won't talk about how to design specific feature for a domain
+
+Output Space
+- y is the output space
+- Diff types
+    - y in {-1, 1}
+    - multiclass, {1,2,3,4...K}
+    - regression {R}
+    - strutured output {1,2,3,4...K}^n 
+
+Examples
+- Disease Diagnosis
+    - x: Properties of Patients (symptoms, lab tests)
+    - y: Disease
+- Part-Of-Speech Tagging
+    - x: English Sentence
+    - y: part of speech of a word in the sentence
+- Face Recognition
+    - x: Bitmap of person's face
+    - y: Name the person/property
+- Automatic Steering
+    - x: Bitmap of road surface
+    - y: Degrees to turn steering wheel
+
+The model g(x)
+
