@@ -76,3 +76,13 @@ The model g(x)
 
 A learning Problem
     - How many possible functions can be made from an input set 
+    - 4 inputs (features) -> 2^16 y functions
+        - bc 16 possible inputs for 4 inputs (2^4)
+        - so 2^16 results in y
+            - so this is the hypothesis space 
+
+Hypothesis Space
+    - We have 2^16
+    - need to find the correct ones
+    - after observing seven examples, we still have 2^9 possible f's
+    - still ambiguity but kinda learnt a little
