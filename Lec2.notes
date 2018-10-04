@@ -86,3 +86,9 @@ Hypothesis Space
     - need to find the correct ones
     - after observing seven examples, we still have 2^9 possible f's
     - still ambiguity but kinda learnt a little
+
+General Strategies for Machine Learning
+    - Develop Flexible Hypothesis Spaces
+        - decision trees, neural networks, nested collections
+    - Develop Representation languages for restricted classes
+    - Develop algos to find a hypothesis that fits the data, hope it generalizes well
